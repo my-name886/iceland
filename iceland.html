@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冰岛南岸</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', "Microsoft YaHei", sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+            overflow-x: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        
+        /* 客服按钮与信息框样式 */
+        .cs-btn {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0 auto 15px auto;
+            display: block;
+            transition: background-color 0.2s, transform 0.1s;
+            box-shadow: 0 2px 5px rgba(230, 126, 34, 0.4);
+        }
+        .cs-btn:hover {
+            background-color: #d35400;
+        }
+        .cs-btn:active {
+            transform: scale(0.98);
+        }
+        .cs-info {
+            display: none;
+            background-color: #fdfefe;
+            border: 1px solid #fcf3cf;
+            border-left: 4px solid #e67e22;
+            padding: 15px 20px;
+            margin: 0 auto 20px auto;
+            max-width: 400px;
+            border-radius: 4px;
+            color: #8a6d3b;
+            font-size: 1.05em;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .notice-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.9em;
+            color: #856404;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border: 1px solid #e0e6ed;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #34495e;
+            color: #ffffff;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        tr.master-pick {
+            background-color: #f8f9fa;
+            border-left: 4px solid #8e44ad;
+        }
+        tr.platform-pick {
+            background-color: #ffffff;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        .operator {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+            white-space: nowrap;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .link-btn:hover {
+            background-color: #1c5980;
+        }
+        .source-tag {
+            font-size: 0.8em;
+            color: #e67e22;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>冰岛南岸</h1>
+        <p class="subtitle">Made by Xinxiang Wang</p>
+        
+        <button id="csBtn" class="cs-btn">💬 联系专属客服</button>
+        <div id="csInfo" class="cs-info">
+            <strong>👨‍💼 客服经理（后续找这个人即可：</strong>郑博仁 Boren Zheng<br>
+            <strong>📞 咨询电话：</strong><a href="tel:07350119309" style="color: #e67e22; text-decoration: none; font-weight: bold;">07350119309</a>
+        </div>
+
+        <div class="notice-box">
+            <strong>💡 行程结构提示：</strong>没有任何提示。
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>数据来源</th>
+                    <th>团名</th>
+                    <th>实际承运 (Activity Provider)</th>
+                    <th>总时长</th>
+                    <th>预估价格 (原生货币 + RMB)</th>
+                    <th>核心打卡点</th>
+                    <th>链接</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #27ae60;">【Troll官网】</span>四大</td>
+                    <td>南岸瀑布与冰川徒步一日游</td>
+                    <td class="operator">Troll Expeditions</td>
+                    <td>12小时</td>
+                    <td class="price">€131 (约 ¥1025) 起<br>
+                        <span style="font-size: 0.8em; color: #e67e22; font-weight: normal; display: block; margin-top: 4px; line-height: 1.4;">
+                            <strong>🔥 15% OFF 折扣码: SPRING15</strong><br>
+                            (折后约 €111 / ¥870)<br>
+                            适用出行: 2026年4月5日 - 5月31日
+                        </span>
+                    </td>
+                    <td>塞里雅兰瀑布, 斯科加瀑布, 黑沙滩, <strong>索尔黑马冰川徒步 (专业向导带领上冰)</strong></td>
+                    <td><a href="https://troll.is/day-tour/south-coast-glacier-hike/?_gl=1*1nvaweg*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwj47OBhCmARIsAF5wUEEC0LAx940dgVc8xgwlgzbnxQYUjdEBXnUprSsIiWcdZPKqSI1cGScaAoWhEALw_wcB&gbraid=0AAAAADJ22qGfUSRfCE3ILwSg8YQ4uC56y" target="_blank" class="link-btn" style="background-color: #27ae60;">官网直达</a></td>
+                </tr>
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #27ae60;">【NiceTravel官网】</span>四大</td>
+                    <td>南岸探险：精品小团一日游 (官网版)</td>
+                    <td class="operator">NiceTravel</td>
+                    <td>11小时</td>
+                    <td class="price">£112.05 (约 ¥1020) 起<br>
+                        <span style="font-size: 0.8em; color: #7f8c8d; font-weight: normal; display: block; margin-top: 4px;">
+                            夏季3日游使用 EARLYBIRD 有9折
+                        </span>
+                    </td>
+                    <td>塞里雅兰瀑布, 隐藏瀑布(Gljúfrabúi), 斯科加瀑布, 黑沙滩, 维克镇, 索尔黑马冰川(远观)</td>
+                    <td><a href="https://nicetravel.is/iceland-tours/south-coast-adventure-small-group-day-tour/" target="_blank" class="link-btn" style="background-color: #27ae60;">官网直达</a></td>
+                </tr>
+            <tr class="platform-pick">
+                <td><span class="source-tag" style="color: #27ae60;">【BusTravel官网】</span>四大</td>
+                <td>冰岛南岸一日团– 瀑布冰川黑沙滩</td>
+                <td class="operator">BusTravel Iceland</td>
+                <td>10小时</td>
+                <td class="price">€104.67 (约 ¥818) 起<br>
+                    <span style="font-size: 0.8em; color: #e67e22; font-weight: normal; display: block; margin-top: 4px; line-height: 1.4;">
+                        <strong>🔥 官网折扣码: EB10</strong><br>
+                        (折后约 €94 / ¥736)
+                    </span>
+                </td>
+                <td>塞里雅兰瀑布, 索尔黑马冰川(徒步至冰川脚下), 维克镇, 黑沙滩, 斯科加瀑布</td>
+                <td><a href="https://bustravel.is/zh/%e4%b8%80%e6%97%a5%e5%9b%a2/%e5%86%b0%e5%b2%9b%e5%8d%97%e5%b2%b8%e4%b8%80%e6%97%a5%e5%9b%a2-%e7%80%91%e5%b8%83-%e5%86%b0%e5%b7%9d-%e9%bb%91%e6%b2%99%e6%bb%a9" target="_blank" class="link-btn" style="background-color: #27ae60;">官网直达</a></td>
+            </tr>
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #2980b9;">【findyourguide 1】</span></td>
+                    <td>南岸探险：精品小团一日游</td>
+                    <td class="operator">Nordur Travel</td>
+                    <td>10小时</td>
+                    <td class="price">约 £87 (约 ¥791) 起</td>
+                    <td>斯科加瀑布, 黑沙滩, 维克镇, 索尔黑马冰川(远观), 塞里雅兰瀑布</td>
+                    <td><a href="https://www.getyourguide.com/en-gb/reykjavik-l30/south-coast-adventure-small-group-day-tour-from-reykjavik-t967220/?ranking_uuid=39f2ae45-db64-4dd4-b7fe-0858efb563a6" target="_blank" class="link-btn">原链直达</a></td>
+                </tr>
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #2980b9;">【findyourguide 2】</span></td>
+                    <td>南岸特种兵：冰河湖与钻石沙滩</td>
+                    <td class="operator">Gray Line Iceland</td>
+                    <td>14.5小时</td>
+                    <td class="price">约 £143 (约 ¥1301) 起</td>
+                    <td>斯科加瀑布, 杰古沙龙冰河湖, 钻石沙滩, 维克镇, 塞里雅兰瀑布</td>
+                    <td><a href="https://www.getyourguide.com/en-gb/reykjavik-l30/reykjavik-south-coast-diamond-beach-and-jokulsarlon-tour-t2021/?ranking_uuid=39f2ae45-db64-4dd4-b7fe-0858efb563a6" target="_blank" class="link-btn">原链直达</a></td>
+                </tr>
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #2980b9;">【findyourguide 3】</span></td>
+                    <td>南岸经典：瀑布、黑沙滩与冰川</td>
+                    <td class="operator">BusTravel Iceland</td>
+                    <td>10小时</td>
+                    <td class="price">约 £93 (约 ¥846) 起</td>
+                    <td>塞里雅兰瀑布, 索尔黑马冰川(远观), 维克镇, 黑沙滩</td>
+                    <td><a href="https://www.getyourguide.com/en-gb/reykjavik-l30/southern-iceland-tour-t67018/?ranking_uuid=39f2ae45-db64-4dd4-b7fe-0858efb563a6" target="_blank" class="link-btn">原链直达</a></td>
+                </tr>
+                <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #2980b9;">【findyourguide 4】</span></td>
+                    <td>南岸全景：雷克雅未克出发标准团</td>
+                    <td class="operator">Gray Line Iceland</td>
+                    <td>10.5小时</td>
+                    <td class="price">约 £87 (约 ¥791) 起</td>
+                    <td>塞里雅兰瀑布, 斯科加瀑布, 黑沙滩, 维克镇</td>
+                    <td><a href="https://www.getyourguide.com/en-gb/vik-l32622/south-coast-classic-t72110/?ranking_uuid=39f2ae45-db64-4dd4-b7fe-0858efb563a6" target="_blank" class="link-btn">原链直达</a></td>
+                </tr>
+               <tr class="platform-pick">
+                    <td><span class="source-tag" style="color: #2980b9;">【findyourguide 5】</span></td>
+                    <td>冰岛南岸：黑沙滩与双瀑布游</td>
+                    <td class="operator">ICELANDIA</td>
+                    <td>10小时</td>
+                    <td class="price">约 £93 (约 ¥846) 起</td>
+                    <td>艾雅法拉火山(远观), 塞里雅兰瀑布, 斯科加瀑布, 黑沙滩</td>
+                    <td><a href="https://www.getyourguide.com/en-gb/reykjavik-l30/iceland-south-coast-waterfalls-tour-t58019/?ranking_uuid=39f2ae45-db64-4dd4-b7fe-0858efb563a6" target="_blank" class="link-btn">原链直达</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('csBtn').addEventListener('click', function() {
+            var infoBox = document.getElementById('csInfo');
+            if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+                infoBox.style.display = 'block';
+                this.innerHTML = '收起客服信息';
+            } else {
+                infoBox.style.display = 'none';
+                this.innerHTML = '💬 联系专属客服';
+            }
+        });
+    </script>
+</body>
+</html>
